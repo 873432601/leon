@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.leon.blog.mapper.UserMapper">
+    <!--查询字段-->
+    <sql id="columns">
+        a.`id`,
+        a.`name`,
+        a.`sex`,
+        a.`interest`
+    </sql>
+
+    <!--查询结果集-->
+    <resultMap id="beanMap" type="com.leon.blog.bean.db.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="interest" column="interest"/>
+    </resultMap>
+
+    <!--根据主键获取实体-->
+    <select id="get" resultMap="beanMap">
+        SELECT
+        <include refid="columns"/>
+        FROM
+        user a
+        WHERE
+        id = #{id}
+    </select>
+
+</mapper>
