@@ -27423,3 +27423,229 @@ Consider defining a bean of type 'com.leon.blog.mapper.UserMapper' in your confi
 2017-09-13 17:45:18.030 DEBUG 27704 --- [qtp985178621-30] com.leon.blog.mapper.UserMapper.get      : ==>  Preparing: SELECT a.`id`, a.`name`, a.`sex`, a.`interest` FROM user a WHERE id = ? 
 2017-09-13 17:45:18.055 DEBUG 27704 --- [qtp985178621-30] com.leon.blog.mapper.UserMapper.get      : ==> Parameters: 1(Long)
 2017-09-13 17:45:18.131 DEBUG 27704 --- [qtp985178621-30] com.leon.blog.mapper.UserMapper.get      : <==      Total: 1
+2017-09-13 21:24:39.472  INFO 32228 --- [restartedMain] com.leon.blog.BlogApplication            : Starting BlogApplication on DESKTOP-198UKHG with PID 32228 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+2017-09-13 21:24:39.474  INFO 32228 --- [restartedMain] com.leon.blog.BlogApplication            : No active profile set, falling back to default profiles: default
+2017-09-13 21:24:39.532  INFO 32228 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73127a9e: startup date [Wed Sep 13 21:24:39 CST 2017]; root of context hierarchy
+2017-09-13 21:24:40.384  INFO 32228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-13 21:24:41.211  INFO 32228 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @4629ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-13 21:24:41.358  INFO 32228 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9999
+2017-09-13 21:24:41.360  INFO 32228 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-13 21:24:41.490  INFO 32228 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-13 21:24:41.491  INFO 32228 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-13 21:24:41.493  INFO 32228 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 660000ms
+2017-09-13 21:24:41.500  INFO 32228 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-13 21:24:41.501  INFO 32228 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1972 ms
+2017-09-13 21:24:41.655  INFO 32228 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-13 21:24:41.659  INFO 32228 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-13 21:24:41.660  INFO 32228 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-13 21:24:41.660  INFO 32228 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-13 21:24:41.660  INFO 32228 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-13 21:24:41.665  INFO 32228 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1dda847a{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.1087843761347656351.9999/],AVAILABLE}
+2017-09-13 21:24:41.666  INFO 32228 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @5084ms
+2017-09-13 21:24:42.149  INFO 32228 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'poolScheduler'
+2017-09-13 21:24:42.679  INFO 32228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@73127a9e: startup date [Wed Sep 13 21:24:39 CST 2017]; root of context hierarchy
+2017-09-13 21:24:42.791  INFO 32228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.leon.blog.controller.LoginController.home()
+2017-09-13 21:24:42.800  INFO 32228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-13 21:24:42.801  INFO 32228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-13 21:24:42.880  INFO 32228 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:24:42.880  INFO 32228 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:24:43.021  INFO 32228 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:24:43.551  INFO 32228 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-13 21:24:43.635  INFO 32228 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-13 21:24:43.636  INFO 32228 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-13 21:24:43.644  INFO 32228 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-13 21:24:43.666  INFO 32228 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-13 21:24:43.667  INFO 32228 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-13 21:24:43.684  INFO 32228 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-09-13 21:24:43.715  INFO 32228 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@d5a79a2{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+2017-09-13 21:24:43.719  INFO 32228 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9999 (http/1.1)
+2017-09-13 21:24:43.726  INFO 32228 --- [restartedMain] com.leon.blog.BlogApplication            : Started BlogApplication in 4.69 seconds (JVM running for 7.145)
+2017-09-13 21:27:31.721  INFO 33492 --- [restartedMain] com.leon.blog.BlogApplication            : Starting BlogApplication on DESKTOP-198UKHG with PID 33492 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+2017-09-13 21:27:31.723  INFO 33492 --- [restartedMain] com.leon.blog.BlogApplication            : No active profile set, falling back to default profiles: default
+2017-09-13 21:27:31.871  INFO 33492 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e4a038d: startup date [Wed Sep 13 21:27:31 CST 2017]; root of context hierarchy
+2017-09-13 21:27:32.999  INFO 33492 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-13 21:27:33.786  INFO 33492 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @3976ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-13 21:27:33.926  INFO 33492 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9999
+2017-09-13 21:27:33.927  INFO 33492 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-13 21:27:34.060  INFO 33492 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-13 21:27:34.060  INFO 33492 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-13 21:27:34.062  INFO 33492 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2017-09-13 21:27:34.068  INFO 33492 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-13 21:27:34.069  INFO 33492 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2208 ms
+2017-09-13 21:27:34.207  INFO 33492 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-13 21:27:34.210  INFO 33492 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-13 21:27:34.211  INFO 33492 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-13 21:27:34.211  INFO 33492 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-13 21:27:34.212  INFO 33492 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-13 21:27:34.216  INFO 33492 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@13b50361{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.503463850361162373.9999/],AVAILABLE}
+2017-09-13 21:27:34.217  INFO 33492 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @4407ms
+2017-09-13 21:27:34.674  INFO 33492 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'poolScheduler'
+2017-09-13 21:27:35.174  INFO 33492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e4a038d: startup date [Wed Sep 13 21:27:31 CST 2017]; root of context hierarchy
+2017-09-13 21:27:35.234  INFO 33492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.leon.blog.controller.LoginController.home()
+2017-09-13 21:27:35.239  INFO 33492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-13 21:27:35.239  INFO 33492 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-13 21:27:35.276  INFO 33492 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:27:35.277  INFO 33492 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:27:35.320  INFO 33492 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:27:35.782  INFO 33492 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-13 21:27:35.845  INFO 33492 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-13 21:27:35.846  INFO 33492 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-13 21:27:35.853  INFO 33492 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-13 21:27:35.875  INFO 33492 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-13 21:27:35.876  INFO 33492 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-13 21:27:35.890  INFO 33492 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-09-13 21:27:35.916  INFO 33492 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@6dcb47f1{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+2017-09-13 21:27:35.919  INFO 33492 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9999 (http/1.1)
+2017-09-13 21:27:35.924  INFO 33492 --- [restartedMain] com.leon.blog.BlogApplication            : Started BlogApplication in 4.816 seconds (JVM running for 6.115)
+2017-09-13 21:28:05.812  INFO 30192 --- [restartedMain] com.leon.blog.BlogApplication            : Starting BlogApplication on DESKTOP-198UKHG with PID 30192 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+2017-09-13 21:28:05.813  INFO 30192 --- [restartedMain] com.leon.blog.BlogApplication            : No active profile set, falling back to default profiles: default
+2017-09-13 21:28:05.910  INFO 30192 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ef56f96: startup date [Wed Sep 13 21:28:05 CST 2017]; root of context hierarchy
+2017-09-13 21:28:06.833  INFO 30192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-13 21:28:07.724  INFO 30192 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @3348ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-13 21:28:07.859  INFO 30192 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9999
+2017-09-13 21:28:07.860  INFO 30192 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-13 21:28:07.968  INFO 30192 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-13 21:28:07.969  INFO 30192 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-13 21:28:07.970  INFO 30192 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2017-09-13 21:28:07.976  INFO 30192 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-13 21:28:07.976  INFO 30192 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2070 ms
+2017-09-13 21:28:08.115  INFO 30192 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-13 21:28:08.117  INFO 30192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-13 21:28:08.118  INFO 30192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-13 21:28:08.118  INFO 30192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-13 21:28:08.118  INFO 30192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-13 21:28:08.123  INFO 30192 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4efe5904{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.8491997626390552547.9999/],AVAILABLE}
+2017-09-13 21:28:08.123  INFO 30192 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @3749ms
+2017-09-13 21:28:08.539  INFO 30192 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'poolScheduler'
+2017-09-13 21:28:08.883  INFO 30192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ef56f96: startup date [Wed Sep 13 21:28:05 CST 2017]; root of context hierarchy
+2017-09-13 21:28:08.942  INFO 30192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.leon.blog.controller.LoginController.home()
+2017-09-13 21:28:08.962  INFO 30192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-13 21:28:08.963  INFO 30192 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-13 21:28:09.002  INFO 30192 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:28:09.003  INFO 30192 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:28:09.047  INFO 30192 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:28:09.496  INFO 30192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-13 21:28:09.575  INFO 30192 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-13 21:28:09.577  INFO 30192 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-13 21:28:09.585  INFO 30192 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-13 21:28:09.611  INFO 30192 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-13 21:28:09.612  INFO 30192 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-13 21:28:09.629  INFO 30192 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-09-13 21:28:09.655  INFO 30192 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@432f0408{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+2017-09-13 21:28:09.658  INFO 30192 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9999 (http/1.1)
+2017-09-13 21:28:09.663  INFO 30192 --- [restartedMain] com.leon.blog.BlogApplication            : Started BlogApplication in 4.26 seconds (JVM running for 5.289)
+2017-09-13 21:33:45.377  INFO 32360 --- [restartedMain] com.leon.blog.BlogApplication            : Starting BlogApplication on DESKTOP-198UKHG with PID 32360 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+2017-09-13 21:33:45.378  INFO 32360 --- [restartedMain] com.leon.blog.BlogApplication            : No active profile set, falling back to default profiles: default
+2017-09-13 21:33:45.504  INFO 32360 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2bfa8437: startup date [Wed Sep 13 21:33:45 CST 2017]; root of context hierarchy
+2017-09-13 21:33:46.570  INFO 32360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-13 21:33:47.445  INFO 32360 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @4362ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-13 21:33:47.582  INFO 32360 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9999
+2017-09-13 21:33:47.585  INFO 32360 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-13 21:33:47.694  INFO 32360 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-13 21:33:47.695  INFO 32360 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-13 21:33:47.696  INFO 32360 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 600000ms
+2017-09-13 21:33:47.702  INFO 32360 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-13 21:33:47.703  INFO 32360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2204 ms
+2017-09-13 21:33:47.854  INFO 32360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-13 21:33:47.858  INFO 32360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-13 21:33:47.859  INFO 32360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-13 21:33:47.859  INFO 32360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-13 21:33:47.859  INFO 32360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-13 21:33:47.864  INFO 32360 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7355015a{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.742677237012058559.9999/],AVAILABLE}
+2017-09-13 21:33:47.865  INFO 32360 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @4783ms
+2017-09-13 21:33:48.290  INFO 32360 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'poolScheduler'
+2017-09-13 21:33:48.628  INFO 32360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2bfa8437: startup date [Wed Sep 13 21:33:45 CST 2017]; root of context hierarchy
+2017-09-13 21:33:48.690  INFO 32360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.leon.blog.controller.LoginController.home()
+2017-09-13 21:33:48.695  INFO 32360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-13 21:33:48.696  INFO 32360 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-13 21:33:48.751  INFO 32360 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:33:48.751  INFO 32360 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:33:48.797  INFO 32360 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:33:49.284  INFO 32360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-13 21:33:49.411  INFO 32360 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-13 21:33:49.413  INFO 32360 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-13 21:33:49.425  INFO 32360 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-13 21:33:49.459  INFO 32360 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-13 21:33:49.460  INFO 32360 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-13 21:33:49.484  INFO 32360 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2017-09-13 21:33:49.539  INFO 32360 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@7574f11f{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+2017-09-13 21:33:49.543  INFO 32360 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9999 (http/1.1)
+2017-09-13 21:33:49.558  INFO 32360 --- [restartedMain] com.leon.blog.BlogApplication            : Started BlogApplication in 4.973 seconds (JVM running for 6.476)
+2017-09-13 21:33:52.899  INFO 32360 --- [qtp322955147-30] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-13 21:33:52.904 DEBUG 32360 --- [qtp322955147-30] com.leon.blog.mapper.UserMapper.get      : ==>  Preparing: SELECT a.`id`, a.`name`, a.`sex`, a.`interest` FROM user a WHERE id = ? 
+2017-09-13 21:33:52.920 DEBUG 32360 --- [qtp322955147-30] com.leon.blog.mapper.UserMapper.get      : ==> Parameters: 1(Long)
+2017-09-13 21:33:52.931 DEBUG 32360 --- [qtp322955147-30] com.leon.blog.mapper.UserMapper.get      : <==      Total: 1
+2017-09-13 21:37:09.150  INFO 31432 --- [restartedMain] com.leon.blog.BlogApplication            : Starting BlogApplication on DESKTOP-198UKHG with PID 31432 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+2017-09-13 21:37:09.152  INFO 31432 --- [restartedMain] com.leon.blog.BlogApplication            : No active profile set, falling back to default profiles: default
+2017-09-13 21:37:09.281  INFO 31432 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6268b40d: startup date [Wed Sep 13 21:37:09 CST 2017]; root of context hierarchy
+2017-09-13 21:37:10.421  INFO 31432 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-13 21:37:11.217  INFO 31432 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @4084ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-13 21:37:11.366  INFO 31432 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9999
+2017-09-13 21:37:11.368  INFO 31432 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-13 21:37:11.484  INFO 31432 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-13 21:37:11.485  INFO 31432 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-13 21:37:11.487  INFO 31432 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 660000ms
+2017-09-13 21:37:11.493  INFO 31432 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-13 21:37:11.493  INFO 31432 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2217 ms
+2017-09-13 21:37:11.639  INFO 31432 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-13 21:37:11.642  INFO 31432 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-13 21:37:11.642  INFO 31432 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-13 21:37:11.642  INFO 31432 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-13 21:37:11.643  INFO 31432 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-13 21:37:11.647  INFO 31432 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4a4279b8{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.7306071205685415029.9999/],AVAILABLE}
+2017-09-13 21:37:11.647  INFO 31432 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @4515ms
+2017-09-13 21:37:12.514  INFO 31432 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'poolScheduler'
+2017-09-13 21:37:12.875  INFO 31432 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6268b40d: startup date [Wed Sep 13 21:37:09 CST 2017]; root of context hierarchy
+2017-09-13 21:37:12.931  INFO 31432 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.leon.blog.controller.LoginController.home()
+2017-09-13 21:37:12.938  INFO 31432 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-13 21:37:12.939  INFO 31432 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-13 21:37:12.980  INFO 31432 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:37:12.980  INFO 31432 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:37:13.023  INFO 31432 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:37:13.763  INFO 31432 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-13 21:37:13.838  INFO 31432 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-13 21:37:13.840  INFO 31432 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-13 21:37:13.847  INFO 31432 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-13 21:37:13.869  INFO 31432 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-13 21:37:13.870  INFO 31432 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-13 21:37:13.886  INFO 31432 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-09-13 21:37:13.914  INFO 31432 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@5e0d347d{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+2017-09-13 21:37:13.917  INFO 31432 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9999 (http/1.1)
+2017-09-13 21:37:13.924  INFO 31432 --- [restartedMain] com.leon.blog.BlogApplication            : Started BlogApplication in 5.301 seconds (JVM running for 6.791)
+2017-09-13 21:42:53.065  INFO 34080 --- [restartedMain] com.leon.blog.BlogApplication            : Starting BlogApplication on DESKTOP-198UKHG with PID 34080 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+2017-09-13 21:42:53.067  INFO 34080 --- [restartedMain] com.leon.blog.BlogApplication            : No active profile set, falling back to default profiles: default
+2017-09-13 21:42:53.178  INFO 34080 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e83fa37: startup date [Wed Sep 13 21:42:53 CST 2017]; root of context hierarchy
+2017-09-13 21:42:54.154  INFO 34080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-13 21:42:54.955  INFO 34080 --- [restartedMain] org.eclipse.jetty.util.log               : Logging initialized @4013ms to org.eclipse.jetty.util.log.Slf4jLog
+2017-09-13 21:42:55.093  INFO 34080 --- [restartedMain] e.j.JettyEmbeddedServletContainerFactory : Server initialized with port: 9999
+2017-09-13 21:42:55.095  INFO 34080 --- [restartedMain] org.eclipse.jetty.server.Server          : jetty-9.4.6.v20170531
+2017-09-13 21:42:55.199  INFO 34080 --- [restartedMain] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2017-09-13 21:42:55.199  INFO 34080 --- [restartedMain] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2017-09-13 21:42:55.201  INFO 34080 --- [restartedMain] org.eclipse.jetty.server.session         : Scavenging every 660000ms
+2017-09-13 21:42:55.207  INFO 34080 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2017-09-13 21:42:55.207  INFO 34080 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2035 ms
+2017-09-13 21:42:55.373  INFO 34080 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-13 21:42:55.376  INFO 34080 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-13 21:42:55.377  INFO 34080 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-13 21:42:55.377  INFO 34080 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-13 21:42:55.377  INFO 34080 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-13 21:42:55.381  INFO 34080 --- [restartedMain] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6908e323{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.6338707833985903382.9999/],AVAILABLE}
+2017-09-13 21:42:55.381  INFO 34080 --- [restartedMain] org.eclipse.jetty.server.Server          : Started @4441ms
+2017-09-13 21:42:56.174  INFO 34080 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'poolScheduler'
+2017-09-13 21:42:56.518  INFO 34080 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e83fa37: startup date [Wed Sep 13 21:42:53 CST 2017]; root of context hierarchy
+2017-09-13 21:42:56.574  INFO 34080 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto java.lang.String com.leon.blog.controller.LoginController.home()
+2017-09-13 21:42:56.582  INFO 34080 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-13 21:42:56.583  INFO 34080 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-13 21:42:56.617  INFO 34080 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:42:56.618  INFO 34080 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:42:56.662  INFO 34080 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-13 21:42:57.037  INFO 34080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-09-13 21:42:57.103  INFO 34080 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-13 21:42:57.104  INFO 34080 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-09-13 21:42:57.110  INFO 34080 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2017-09-13 21:42:57.129  INFO 34080 --- [restartedMain] o.e.j.s.h.ContextHandler.application     : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-13 21:42:57.129  INFO 34080 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-13 21:42:57.145  INFO 34080 --- [restartedMain] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-09-13 21:42:57.172  INFO 34080 --- [restartedMain] o.e.jetty.server.AbstractConnector       : Started ServerConnector@3eeb6d69{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+2017-09-13 21:42:57.174  INFO 34080 --- [restartedMain] .s.b.c.e.j.JettyEmbeddedServletContainer : Jetty started on port(s) 9999 (http/1.1)
+2017-09-13 21:42:57.180  INFO 34080 --- [restartedMain] com.leon.blog.BlogApplication            : Started BlogApplication in 4.959 seconds (JVM running for 6.24)
