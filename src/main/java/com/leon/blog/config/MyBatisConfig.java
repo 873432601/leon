@@ -1,12 +1,10 @@
 package com.leon.blog.config;
 
 
-import com.alibaba.druid.pool.DruidDataSource;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
@@ -25,45 +23,74 @@ import javax.sql.DataSource;
  * @Author 蔡学亮(xueliang.cai@mljr.com)
  * @Date 2017年09月12日 14:17
  */
-@Configuration
-@MapperScan(basePackages = {"com.leon.blog.mapper"},sqlSessionFactoryRef = "sqlSessionFactory")
 @PropertySource("classpath:application.properties")
+@MapperScan(basePackages = {"com.leon.blog.mapper"})
+@Configuration
+@Slf4j
 public class MyBatisConfig {
-    private static final Logger logger = LoggerFactory.getLogger(MyBatisConfig.class);
+
     private static final String MAPPER_XML_LOCATION = "classpath*:mapper/**/*Mapper.xml";
+    //数据bean路径
+    private static final String DB_BEAN_LOCATION = "com.leon.blog.bean.db";
+    //数据库连接池类型
     @Value("${spring.datasource.type}")
-    private Class<? extends DataSource> dataSourceType;
-    //写库
-    private static final String WRITE_DATASOURCE_PATH = "spring.datasource";
+    private static  Class<? extends DataSource> dataSourceType;
+    //读库(主库)
+    private static final String READ_DATASOURCE_PREFIX = "spring.datasource";
+    //写库(从库)
+    private static final String WRITE_DATASOURCE_PREFIX = "spring.slave";
 
 
-    @Bean
-    @Primary
-    @ConfigurationProperties(prefix = WRITE_DATASOURCE_PATH)
-    public DataSource dataSource() throws Exception {
+/*****************************************************读库*****************************************************/
+    @Bean(name = "readDataSource")
+    @ConfigurationProperties(prefix = READ_DATASOURCE_PREFIX)
+    public DataSource readDataSource() throws Exception {
         return DataSourceBuilder.create().type(dataSourceType).build();
     }
 
-    @Bean
+    @Bean(name="readSqlSessionFactory")
+    public SqlSessionFactory readSqlSessionFactory(@Qualifier("readDataSource") DataSource dataSource) {
+        return createSqlSessionFactory(dataSource);
+    }
+
+
+/*****************************************************写库*****************************************************/
+    @Bean(name = "writeDataSource")
     @Primary
-    public DataSourceTransactionManager adsTransactionManager(@Qualifier("dataSource") DataSource dataSource) {
+    @ConfigurationProperties(prefix = WRITE_DATASOURCE_PREFIX)
+    public DataSource writeDataSource() throws Exception {
+        return DataSourceBuilder.create().type(dataSourceType).build();
+    }
+
+    @Bean(name = "writeTransactionManager")
+    @Primary
+    public DataSourceTransactionManager writeTransactionManager(@Qualifier("writeDataSource") DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
 
-    @Bean
+    @Bean(name = "writeqlSessionFactory")
     @Primary
-    public SqlSessionFactory sqlSessionFactory(DataSource dataSource) {
-        DruidDataSource druidDataSource = (DruidDataSource) dataSource;
-        System.out.println("------maxActive:"+druidDataSource.getMaxActive()+"-----------");
-        System.out.println("------maxActive:"+druidDataSource.getTimeBetweenEvictionRunsMillis()+"-----------");
+    public SqlSessionFactory writeqlSessionFactory(@Qualifier("writeDataSource") DataSource dataSource) {
+        return createSqlSessionFactory(dataSource);
+    }
+
+    /**
+     * 创建SqlSessionFactory私有方法
+     * @param dataSource
+     * @return
+     */
+    private SqlSessionFactory createSqlSessionFactory(DataSource dataSource){
+
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+        //设置数据库bean路径，在mapper.xml文件中的parameterType和resultType不用写完全限定类名
+        sqlSessionFactoryBean.setTypeAliasesPackage(DB_BEAN_LOCATION);
         sqlSessionFactoryBean.setDataSource(dataSource);
         try {
-            //添加XML目录
+            //添加mapper.xml目录
             sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(MAPPER_XML_LOCATION));
             return sqlSessionFactoryBean.getObject();
         } catch (Exception e) {
-            logger.error(e.getMessage(), e);
+            log.error(e.getMessage(),e);
             e.printStackTrace();
             throw new RuntimeException(e);
         }
