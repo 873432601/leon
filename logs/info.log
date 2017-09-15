@@ -1,0 +1,281 @@
+[restartedMain] INFO  2017-09-15 14:51:10.430 c.l.b.BlogApplication.logStarting[48] Starting BlogApplication on DESKTOP-198UKHG with PID 35872 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+[restartedMain] INFO  2017-09-15 14:51:10.432 c.l.b.BlogApplication.logStartupProfileInfo[593] No active profile set, falling back to default profiles: default
+[restartedMain] INFO  2017-09-15 14:51:10.534 o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a6eecc6: startup date [Fri Sep 15 14:51:10 CST 2017]; root of context hierarchy
+[background-preinit] INFO  2017-09-15 14:51:10.567 o.h.v.i.u.Version.<clinit>[30] HV000001: Hibernate Validator 5.3.5.Final
+[restartedMain] INFO  2017-09-15 14:51:11.580 o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165] Multiple Spring Data modules found, entering strict repository configuration mode!
+[restartedMain] INFO  2017-09-15 14:51:12.391 o.e.j.u.log.initialized[192] Logging initialized @3650ms to org.eclipse.jetty.util.log.Slf4jLog
+[restartedMain] INFO  2017-09-15 14:51:12.528 o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176] Server initialized with port: 9999
+[restartedMain] INFO  2017-09-15 14:51:12.530 o.e.j.s.Server.doStart[372] jetty-9.4.6.v20170531
+[restartedMain] INFO  2017-09-15 14:51:12.606 o.e.j.s.session.doStart[364] DefaultSessionIdManager workerName=node0
+[restartedMain] INFO  2017-09-15 14:51:12.607 o.e.j.s.session.doStart[369] No SessionScavenger set, using defaults
+[restartedMain] INFO  2017-09-15 14:51:12.609 o.e.j.s.session.startScavenging[149] Scavenging every 660000ms
+[restartedMain] INFO  2017-09-15 14:51:12.616 o.e.j.s.h.C.application.log[2221] Initializing Spring embedded WebApplicationContext
+[restartedMain] INFO  2017-09-15 14:51:12.617 o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276] Root WebApplicationContext: initialization completed in 2083 ms
+[restartedMain] INFO  2017-09-15 14:51:12.842 o.s.b.w.s.ServletRegistrationBean.onStartup[190] Mapping servlet: 'dispatcherServlet' to [/]
+[restartedMain] INFO  2017-09-15 14:51:12.845 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 14:51:12.846 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 14:51:12.847 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 14:51:12.847 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'requestContextFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 14:51:12.852 o.e.j.s.h.ContextHandler.doStart[788] Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@45d6f665{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.4097081451969954576.9999/],AVAILABLE}
+[restartedMain] INFO  2017-09-15 14:51:12.853 o.e.j.s.Server.doStart[444] Started @4112ms
+[restartedMain] WARN  2017-09-15 14:51:12.881 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.doWith[440] Autowired annotation is not supported on static fields: private static java.lang.Class com.leon.blog.config.MyBatisConfig.dataSourceType
+[restartedMain] INFO  2017-09-15 14:51:13.667 o.s.s.c.ThreadPoolTaskScheduler.initialize[165] Initializing ExecutorService  'poolScheduler'
+[restartedMain] INFO  2017-09-15 14:51:14.038 o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a6eecc6: startup date [Fri Sep 15 14:51:10 CST 2017]; root of context hierarchy
+[restartedMain] INFO  2017-09-15 14:51:14.091 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/{msgParam}],methods=[POST]}" onto com.leon.blog.bean.db.User com.leon.blog.controller.LoginController.home(java.lang.String,java.lang.String)
+[restartedMain] INFO  2017-09-15 14:51:14.094 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[restartedMain] INFO  2017-09-15 14:51:14.095 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[restartedMain] INFO  2017-09-15 14:51:14.127 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 14:51:14.127 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 14:51:14.166 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 14:51:14.475 o.s.b.d.a.OptionalLiveReloadServer.startServer[58] LiveReload server is running on port 35729
+[restartedMain] INFO  2017-09-15 14:51:14.530 o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431] Registering beans for JMX exposure on startup
+[restartedMain] INFO  2017-09-15 14:51:14.550 o.e.j.s.h.C.application.log[2221] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[restartedMain] INFO  2017-09-15 14:51:14.551 o.s.w.s.DispatcherServlet.initServletBean[489] FrameworkServlet 'dispatcherServlet': initialization started
+[restartedMain] INFO  2017-09-15 14:51:14.563 o.s.w.s.DispatcherServlet.initServletBean[508] FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+[restartedMain] INFO  2017-09-15 14:51:14.698 o.e.j.s.AbstractConnector.doStart[280] Started ServerConnector@3667c176{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+[restartedMain] INFO  2017-09-15 14:51:14.700 o.s.b.c.e.j.JettyEmbeddedServletContainer.start[155] Jetty started on port(s) 9999 (http/1.1)
+[restartedMain] INFO  2017-09-15 14:51:14.706 c.l.b.BlogApplication.logStarted[57] Started BlogApplication in 4.946 seconds (JVM running for 5.964)
+[qtp965373093-32] WARN  2017-09-15 14:51:21.920 o.a.t.j.p.ConnectionPool.log[179] maxIdle is larger than maxActive, setting maxIdle to: 20
+[qtp965373093-32] INFO  2017-09-15 14:51:22.285 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp965373093-32] ERROR 2017-09-15 14:51:22.286 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp965373093-32] WARN  2017-09-15 14:51:22.286 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp965373093-33] INFO  2017-09-15 16:10:42.666 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp965373093-33] ERROR 2017-09-15 16:10:42.707 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp965373093-33] WARN  2017-09-15 16:10:42.707 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp965373093-37] INFO  2017-09-15 16:14:32.544 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp965373093-37] ERROR 2017-09-15 16:14:32.544 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp965373093-37] WARN  2017-09-15 16:14:32.545 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp965373093-33] INFO  2017-09-15 16:14:54.787 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp965373093-33] ERROR 2017-09-15 16:14:54.788 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp965373093-33] WARN  2017-09-15 16:14:54.788 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp965373093-36] WARN  2017-09-15 16:21:52.549 o.s.w.s.PageNotFound.handleHttpRequestMethodNotSupported[215] Request method 'GET' not supported
+[qtp965373093-36] WARN  2017-09-15 16:21:52.568 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+[qtp965373093-35] WARN  2017-09-15 16:21:59.298 o.s.w.s.PageNotFound.handleHttpRequestMethodNotSupported[215] Request method 'GET' not supported
+[qtp965373093-35] WARN  2017-09-15 16:21:59.317 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+[qtp965373093-33] WARN  2017-09-15 16:22:05.058 o.s.w.s.PageNotFound.handleHttpRequestMethodNotSupported[215] Request method 'GET' not supported
+[qtp965373093-33] WARN  2017-09-15 16:22:05.104 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+[qtp965373093-37] WARN  2017-09-15 16:22:12.576 o.s.w.s.m.s.DefaultHandlerExceptionResolver.handleHttpMessageNotReadable[384] Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: com.leon.blog.bean.db.User com.leon.blog.controller.LoginController.home(java.lang.String,java.lang.String)
+[qtp965373093-37] WARN  2017-09-15 16:22:12.578 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: com.leon.blog.bean.db.User com.leon.blog.controller.LoginController.home(java.lang.String,java.lang.String)
+[qtp965373093-37] INFO  2017-09-15 16:23:08.546 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp965373093-37] ERROR 2017-09-15 16:23:08.547 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp965373093-37] WARN  2017-09-15 16:23:08.548 c.l.b.c.LoginController.home[40] warn:caicai
+[restartedMain] INFO  2017-09-15 16:34:02.467 c.l.b.BlogApplication.logStarting[48] Starting BlogApplication on DESKTOP-198UKHG with PID 37860 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+[restartedMain] INFO  2017-09-15 16:34:02.469 c.l.b.BlogApplication.logStartupProfileInfo[593] No active profile set, falling back to default profiles: default
+[restartedMain] INFO  2017-09-15 16:34:02.599 o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f2add87: startup date [Fri Sep 15 16:34:02 CST 2017]; root of context hierarchy
+[background-preinit] INFO  2017-09-15 16:34:02.597 o.h.v.i.u.Version.<clinit>[30] HV000001: Hibernate Validator 5.3.5.Final
+[restartedMain] INFO  2017-09-15 16:34:03.535 o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165] Multiple Spring Data modules found, entering strict repository configuration mode!
+[restartedMain] INFO  2017-09-15 16:34:04.213 o.e.j.u.log.initialized[192] Logging initialized @3804ms to org.eclipse.jetty.util.log.Slf4jLog
+[restartedMain] INFO  2017-09-15 16:34:04.336 o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176] Server initialized with port: 9999
+[restartedMain] INFO  2017-09-15 16:34:04.338 o.e.j.s.Server.doStart[372] jetty-9.4.6.v20170531
+[restartedMain] INFO  2017-09-15 16:34:04.413 o.e.j.s.session.doStart[364] DefaultSessionIdManager workerName=node0
+[restartedMain] INFO  2017-09-15 16:34:04.413 o.e.j.s.session.doStart[369] No SessionScavenger set, using defaults
+[restartedMain] INFO  2017-09-15 16:34:04.415 o.e.j.s.session.startScavenging[149] Scavenging every 660000ms
+[restartedMain] INFO  2017-09-15 16:34:04.422 o.e.j.s.h.C.application.log[2221] Initializing Spring embedded WebApplicationContext
+[restartedMain] INFO  2017-09-15 16:34:04.422 o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276] Root WebApplicationContext: initialization completed in 1823 ms
+[restartedMain] INFO  2017-09-15 16:34:04.587 o.s.b.w.s.ServletRegistrationBean.onStartup[190] Mapping servlet: 'dispatcherServlet' to [/]
+[restartedMain] INFO  2017-09-15 16:34:04.590 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:34:04.591 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:34:04.591 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:34:04.592 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'requestContextFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:34:04.596 o.e.j.s.h.ContextHandler.doStart[788] Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7d5b3c3e{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.2880611070258762752.9999/],AVAILABLE}
+[restartedMain] INFO  2017-09-15 16:34:04.597 o.e.j.s.Server.doStart[444] Started @4188ms
+[restartedMain] WARN  2017-09-15 16:34:04.614 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.doWith[440] Autowired annotation is not supported on static fields: private static java.lang.Class com.leon.blog.config.MyBatisConfig.dataSourceType
+[restartedMain] INFO  2017-09-15 16:34:05.451 o.s.s.c.ThreadPoolTaskScheduler.initialize[165] Initializing ExecutorService  'poolScheduler'
+[restartedMain] INFO  2017-09-15 16:34:05.852 o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f2add87: startup date [Fri Sep 15 16:34:02 CST 2017]; root of context hierarchy
+[restartedMain] INFO  2017-09-15 16:34:05.910 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/{msgParam}],methods=[POST]}" onto com.leon.blog.bean.db.User com.leon.blog.controller.LoginController.home(java.lang.String,java.lang.String)
+[restartedMain] INFO  2017-09-15 16:34:05.914 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[restartedMain] INFO  2017-09-15 16:34:05.915 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[restartedMain] INFO  2017-09-15 16:34:05.946 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 16:34:05.946 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 16:34:05.987 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 16:34:06.329 o.s.b.d.a.OptionalLiveReloadServer.startServer[58] LiveReload server is running on port 35729
+[restartedMain] INFO  2017-09-15 16:34:06.404 o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431] Registering beans for JMX exposure on startup
+[restartedMain] INFO  2017-09-15 16:34:06.425 o.e.j.s.h.C.application.log[2221] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[restartedMain] INFO  2017-09-15 16:34:06.425 o.s.w.s.DispatcherServlet.initServletBean[489] FrameworkServlet 'dispatcherServlet': initialization started
+[restartedMain] INFO  2017-09-15 16:34:06.440 o.s.w.s.DispatcherServlet.initServletBean[508] FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+[restartedMain] INFO  2017-09-15 16:34:06.588 o.e.j.s.AbstractConnector.doStart[280] Started ServerConnector@2be07e91{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+[restartedMain] INFO  2017-09-15 16:34:06.592 o.s.b.c.e.j.JettyEmbeddedServletContainer.start[155] Jetty started on port(s) 9999 (http/1.1)
+[restartedMain] INFO  2017-09-15 16:34:06.602 c.l.b.BlogApplication.logStarted[57] Started BlogApplication in 4.721 seconds (JVM running for 6.193)
+[qtp238815772-32] WARN  2017-09-15 16:34:08.547 o.a.t.j.p.ConnectionPool.log[179] maxIdle is larger than maxActive, setting maxIdle to: 20
+[qtp238815772-32] INFO  2017-09-15 16:34:08.827 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-32] ERROR 2017-09-15 16:34:08.828 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-32] WARN  2017-09-15 16:34:08.828 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-33] INFO  2017-09-15 16:41:51.614 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-33] ERROR 2017-09-15 16:41:51.620 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-33] WARN  2017-09-15 16:41:51.620 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-36] INFO  2017-09-15 16:41:58.465 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-36] ERROR 2017-09-15 16:41:58.466 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-36] WARN  2017-09-15 16:41:58.466 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-37] INFO  2017-09-15 16:42:12.586 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-37] ERROR 2017-09-15 16:42:12.587 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-37] WARN  2017-09-15 16:42:12.587 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-39] INFO  2017-09-15 16:44:45.575 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-39] ERROR 2017-09-15 16:44:45.575 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-39] WARN  2017-09-15 16:44:45.575 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-38] INFO  2017-09-15 16:45:01.825 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-38] ERROR 2017-09-15 16:45:01.825 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-38] WARN  2017-09-15 16:45:01.826 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-36] INFO  2017-09-15 16:45:59.592 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-36] ERROR 2017-09-15 16:45:59.593 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-36] WARN  2017-09-15 16:45:59.593 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-38] INFO  2017-09-15 16:46:45.393 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-38] ERROR 2017-09-15 16:46:45.394 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-38] WARN  2017-09-15 16:46:45.394 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-33] INFO  2017-09-15 16:48:00.725 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-33] ERROR 2017-09-15 16:48:00.725 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-33] WARN  2017-09-15 16:48:00.726 c.l.b.c.LoginController.home[40] warn:caicai
+[qtp238815772-39] INFO  2017-09-15 16:49:17.360 c.l.b.c.LoginController.home[38] infi:infooooooo
+[qtp238815772-39] ERROR 2017-09-15 16:49:17.361 c.l.b.c.LoginController.home[39] caixueliang:123
+[qtp238815772-39] WARN  2017-09-15 16:49:17.361 c.l.b.c.LoginController.home[40] warn:caicai
+[restartedMain] INFO  2017-09-15 16:49:48.992 c.l.b.BlogApplication.logStarting[48] Starting BlogApplication on DESKTOP-198UKHG with PID 31544 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+[restartedMain] INFO  2017-09-15 16:49:48.995 c.l.b.BlogApplication.logStartupProfileInfo[593] No active profile set, falling back to default profiles: default
+[restartedMain] INFO  2017-09-15 16:49:49.090 o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b096ec4: startup date [Fri Sep 15 16:49:49 CST 2017]; root of context hierarchy
+[background-preinit] INFO  2017-09-15 16:49:49.116 o.h.v.i.u.Version.<clinit>[30] HV000001: Hibernate Validator 5.3.5.Final
+[restartedMain] INFO  2017-09-15 16:49:50.051 o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165] Multiple Spring Data modules found, entering strict repository configuration mode!
+[restartedMain] INFO  2017-09-15 16:49:50.899 o.e.j.u.log.initialized[192] Logging initialized @4188ms to org.eclipse.jetty.util.log.Slf4jLog
+[restartedMain] INFO  2017-09-15 16:49:51.016 o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176] Server initialized with port: 9999
+[restartedMain] INFO  2017-09-15 16:49:51.017 o.e.j.s.Server.doStart[372] jetty-9.4.6.v20170531
+[restartedMain] INFO  2017-09-15 16:49:51.093 o.e.j.s.session.doStart[364] DefaultSessionIdManager workerName=node0
+[restartedMain] INFO  2017-09-15 16:49:51.093 o.e.j.s.session.doStart[369] No SessionScavenger set, using defaults
+[restartedMain] INFO  2017-09-15 16:49:51.095 o.e.j.s.session.startScavenging[149] Scavenging every 660000ms
+[restartedMain] INFO  2017-09-15 16:49:51.101 o.e.j.s.h.C.application.log[2221] Initializing Spring embedded WebApplicationContext
+[restartedMain] INFO  2017-09-15 16:49:51.101 o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276] Root WebApplicationContext: initialization completed in 2011 ms
+[restartedMain] INFO  2017-09-15 16:49:51.258 o.s.b.w.s.ServletRegistrationBean.onStartup[190] Mapping servlet: 'dispatcherServlet' to [/]
+[restartedMain] INFO  2017-09-15 16:49:51.261 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:49:51.261 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:49:51.262 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:49:51.262 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'requestContextFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 16:49:51.265 o.e.j.s.h.ContextHandler.doStart[788] Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1405c575{/aaa,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.2067399172495357253.9999/],AVAILABLE}
+[restartedMain] INFO  2017-09-15 16:49:51.266 o.e.j.s.Server.doStart[444] Started @4555ms
+[restartedMain] WARN  2017-09-15 16:49:51.279 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.doWith[440] Autowired annotation is not supported on static fields: private static java.lang.Class com.leon.blog.config.MyBatisConfig.dataSourceType
+[restartedMain] INFO  2017-09-15 16:49:51.985 o.s.s.c.ThreadPoolTaskScheduler.initialize[165] Initializing ExecutorService  'poolScheduler'
+[restartedMain] INFO  2017-09-15 16:49:52.381 o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2b096ec4: startup date [Fri Sep 15 16:49:49 CST 2017]; root of context hierarchy
+[restartedMain] INFO  2017-09-15 16:49:52.429 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/{msgParam}],methods=[POST]}" onto com.leon.blog.bean.db.User com.leon.blog.controller.LoginController.home(java.lang.String,com.leon.blog.bean.db.User)
+[restartedMain] INFO  2017-09-15 16:49:52.434 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[restartedMain] INFO  2017-09-15 16:49:52.435 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[restartedMain] INFO  2017-09-15 16:49:52.466 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 16:49:52.466 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 16:49:52.501 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 16:49:52.870 o.s.b.d.a.OptionalLiveReloadServer.startServer[58] LiveReload server is running on port 35729
+[restartedMain] INFO  2017-09-15 16:49:52.954 o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431] Registering beans for JMX exposure on startup
+[restartedMain] INFO  2017-09-15 16:49:52.983 o.e.j.s.h.C.application.log[2221] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[restartedMain] INFO  2017-09-15 16:49:52.983 o.s.w.s.DispatcherServlet.initServletBean[489] FrameworkServlet 'dispatcherServlet': initialization started
+[restartedMain] INFO  2017-09-15 16:49:53.001 o.s.w.s.DispatcherServlet.initServletBean[508] FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+[restartedMain] INFO  2017-09-15 16:49:53.170 o.e.j.s.AbstractConnector.doStart[280] Started ServerConnector@6688be7a{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+[restartedMain] INFO  2017-09-15 16:49:53.173 o.s.b.c.e.j.JettyEmbeddedServletContainer.start[155] Jetty started on port(s) 9999 (http/1.1)
+[restartedMain] INFO  2017-09-15 16:49:53.180 c.l.b.BlogApplication.logStarted[57] Started BlogApplication in 4.949 seconds (JVM running for 6.469)
+[qtp1204863702-32] WARN  2017-09-15 16:51:04.838 o.s.w.s.m.s.DefaultHandlerExceptionResolver.handleHttpMessageNotReadable[384] Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}; nested exception is com.alibaba.fastjson.JSONException: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}
+[qtp1204863702-32] WARN  2017-09-15 16:51:04.870 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}; nested exception is com.alibaba.fastjson.JSONException: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}
+[qtp1204863702-37] WARN  2017-09-15 16:51:17.405 o.s.w.s.m.s.DefaultHandlerExceptionResolver.handleHttpMessageNotReadable[384] Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}; nested exception is com.alibaba.fastjson.JSONException: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}
+[qtp1204863702-37] WARN  2017-09-15 16:51:17.408 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}; nested exception is com.alibaba.fastjson.JSONException: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+	
+}
+[qtp1204863702-38] WARN  2017-09-15 16:51:29.675 o.s.w.s.m.s.DefaultHandlerExceptionResolver.handleHttpMessageNotReadable[384] Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+}; nested exception is com.alibaba.fastjson.JSONException: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+}
+[qtp1204863702-38] WARN  2017-09-15 16:51:29.679 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+}; nested exception is com.alibaba.fastjson.JSONException: not match : - ,, info : pos 7, json : {
+	id：3,
+	name:"xueliang",
+	sex:1,
+	interest:"足球"
+}
+[qtp1204863702-33] WARN  2017-09-15 16:53:25.813 o.a.t.j.p.ConnectionPool.log[179] maxIdle is larger than maxActive, setting maxIdle to: 20
+[restartedMain] INFO  2017-09-15 18:02:00.801 c.l.b.BlogApplication.logStarting[48] Starting BlogApplication on DESKTOP-198UKHG with PID 35904 (H:\Workspace\Intellij_IDEA\leon\target\classes started by lenovo in H:\Workspace\Intellij_IDEA\leon)
+[restartedMain] INFO  2017-09-15 18:02:00.803 c.l.b.BlogApplication.logStartupProfileInfo[593] No active profile set, falling back to default profiles: default
+[restartedMain] INFO  2017-09-15 18:02:00.912 o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[583] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bd4c487: startup date [Fri Sep 15 18:02:00 CST 2017]; root of context hierarchy
+[background-preinit] INFO  2017-09-15 18:02:00.919 o.h.v.i.u.Version.<clinit>[30] HV000001: Hibernate Validator 5.3.5.Final
+[restartedMain] INFO  2017-09-15 18:02:01.798 o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165] Multiple Spring Data modules found, entering strict repository configuration mode!
+[restartedMain] INFO  2017-09-15 18:02:02.518 o.e.j.u.log.initialized[192] Logging initialized @3765ms to org.eclipse.jetty.util.log.Slf4jLog
+[restartedMain] INFO  2017-09-15 18:02:02.634 o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176] Server initialized with port: 9999
+[restartedMain] INFO  2017-09-15 18:02:02.636 o.e.j.s.Server.doStart[372] jetty-9.4.6.v20170531
+[restartedMain] INFO  2017-09-15 18:02:02.709 o.e.j.s.session.doStart[364] DefaultSessionIdManager workerName=node0
+[restartedMain] INFO  2017-09-15 18:02:02.709 o.e.j.s.session.doStart[369] No SessionScavenger set, using defaults
+[restartedMain] INFO  2017-09-15 18:02:02.710 o.e.j.s.session.startScavenging[149] Scavenging every 660000ms
+[restartedMain] INFO  2017-09-15 18:02:02.716 o.e.j.s.h.C.application.log[2221] Initializing Spring embedded WebApplicationContext
+[restartedMain] INFO  2017-09-15 18:02:02.716 o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276] Root WebApplicationContext: initialization completed in 1804 ms
+[restartedMain] INFO  2017-09-15 18:02:02.875 o.s.b.w.s.ServletRegistrationBean.onStartup[190] Mapping servlet: 'dispatcherServlet' to [/]
+[restartedMain] INFO  2017-09-15 18:02:02.877 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'characterEncodingFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 18:02:02.877 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 18:02:02.878 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 18:02:02.878 o.s.b.w.s.FilterRegistrationBean.configure[258] Mapping filter: 'requestContextFilter' to: [/*]
+[restartedMain] INFO  2017-09-15 18:02:02.881 o.e.j.s.h.ContextHandler.doStart[788] Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@5d828f8f{/,[file:///C:/Users/lenovo/AppData/Local/Temp/jetty-docbase.7554165248717578337.9999/],AVAILABLE}
+[restartedMain] INFO  2017-09-15 18:02:02.882 o.e.j.s.Server.doStart[444] Started @4128ms
+[restartedMain] WARN  2017-09-15 18:02:02.896 o.s.b.f.a.AutowiredAnnotationBeanPostProcessor.doWith[440] Autowired annotation is not supported on static fields: private static java.lang.Class com.leon.blog.config.MyBatisConfig.dataSourceType
+[restartedMain] INFO  2017-09-15 18:02:03.590 o.s.s.c.ThreadPoolTaskScheduler.initialize[165] Initializing ExecutorService  'poolScheduler'
+[restartedMain] INFO  2017-09-15 18:02:03.951 o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bd4c487: startup date [Fri Sep 15 18:02:00 CST 2017]; root of context hierarchy
+[restartedMain] INFO  2017-09-15 18:02:04.003 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/{msgParam}],methods=[POST]}" onto com.leon.blog.bean.db.User com.leon.blog.controller.LoginController.home(java.lang.String,com.leon.blog.bean.db.User)
+[restartedMain] INFO  2017-09-15 18:02:04.007 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[restartedMain] INFO  2017-09-15 18:02:04.008 o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[restartedMain] INFO  2017-09-15 18:02:04.038 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 18:02:04.038 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 18:02:04.073 o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[restartedMain] INFO  2017-09-15 18:02:04.375 o.s.b.d.a.OptionalLiveReloadServer.startServer[58] LiveReload server is running on port 35729
+[restartedMain] INFO  2017-09-15 18:02:04.430 o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431] Registering beans for JMX exposure on startup
+[restartedMain] INFO  2017-09-15 18:02:04.450 o.e.j.s.h.C.application.log[2221] Initializing Spring FrameworkServlet 'dispatcherServlet'
+[restartedMain] INFO  2017-09-15 18:02:04.450 o.s.w.s.DispatcherServlet.initServletBean[489] FrameworkServlet 'dispatcherServlet': initialization started
+[restartedMain] INFO  2017-09-15 18:02:04.464 o.s.w.s.DispatcherServlet.initServletBean[508] FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+[restartedMain] INFO  2017-09-15 18:02:04.597 o.e.j.s.AbstractConnector.doStart[280] Started ServerConnector@e1465fe{HTTP/1.1,[http/1.1]}{127.0.0.1:9999}
+[restartedMain] INFO  2017-09-15 18:02:04.599 o.s.b.c.e.j.JettyEmbeddedServletContainer.start[155] Jetty started on port(s) 9999 (http/1.1)
+[restartedMain] INFO  2017-09-15 18:02:04.605 c.l.b.BlogApplication.logStarted[57] Started BlogApplication in 4.465 seconds (JVM running for 5.851)
+[qtp113890965-32] WARN  2017-09-15 18:02:08.543 o.a.t.j.p.ConnectionPool.log[179] maxIdle is larger than maxActive, setting maxIdle to: 20
+[qtp113890965-35] WARN  2017-09-15 18:03:11.532 o.s.w.s.PageNotFound.handleHttpRequestMethodNotSupported[215] Request method 'GET' not supported
+[qtp113890965-35] WARN  2017-09-15 18:03:11.577 o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException[189] Resolved exception caused by Handler execution: org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
